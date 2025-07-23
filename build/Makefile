@@ -123,32 +123,32 @@ leetcode/fast:
 	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/build
 .PHONY : leetcode/fast
 
-countIsland.o: countIsland.cpp.o
+halfSearch.o: halfSearch.cpp.o
 
-.PHONY : countIsland.o
+.PHONY : halfSearch.o
 
 # target to build an object file
-countIsland.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/countIsland.cpp.o
-.PHONY : countIsland.cpp.o
+halfSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/halfSearch.cpp.o
+.PHONY : halfSearch.cpp.o
 
-countIsland.i: countIsland.cpp.i
+halfSearch.i: halfSearch.cpp.i
 
-.PHONY : countIsland.i
+.PHONY : halfSearch.i
 
 # target to preprocess a source file
-countIsland.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/countIsland.cpp.i
-.PHONY : countIsland.cpp.i
+halfSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/halfSearch.cpp.i
+.PHONY : halfSearch.cpp.i
 
-countIsland.s: countIsland.cpp.s
+halfSearch.s: halfSearch.cpp.s
 
-.PHONY : countIsland.s
+.PHONY : halfSearch.s
 
 # target to generate assembly for a file
-countIsland.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/countIsland.cpp.s
-.PHONY : countIsland.cpp.s
+halfSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/halfSearch.cpp.s
+.PHONY : halfSearch.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... leetcode"
-	@echo "... countIsland.o"
-	@echo "... countIsland.i"
-	@echo "... countIsland.s"
+	@echo "... halfSearch.o"
+	@echo "... halfSearch.i"
+	@echo "... halfSearch.s"
 .PHONY : help
 
 

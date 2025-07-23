@@ -3,5 +3,5 @@ project(leetcode VERSION 0.1.0 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(leetcode countIsland.cpp)
+add_executable(leetcode halfSearch.cpp)
 
