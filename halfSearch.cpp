@@ -12,13 +12,10 @@ public:
         int right = nums.size() - 1;
         while(left < right) {
             int mid = left + (right - left) / 2;
-            cout << "mid: " << nums[mid] << endl;
             if(nums[mid] > target) {
                 right = mid - 1;
-                cout << "left: " << left << endl;
             } else if(nums[mid] < target) {
                 left = mid + 1;
-                cout << "right: " << right << endl;
             } else {
                 return mid;
             }
