@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/apple/engineerLib/vscode/leetcode_cmake/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=gnu++11 -o CMakeFiles/leetcode.dir/halfSearch.cpp.o -c /Users/apple/engineerLib/vscode/leetcode_cmake/halfSearch.cpp",
-  "file": "/Users/apple/engineerLib/vscode/leetcode_cmake/halfSearch.cpp"
-}
-]
