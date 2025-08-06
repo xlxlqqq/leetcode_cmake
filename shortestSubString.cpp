@@ -23,25 +23,32 @@ public:
         while(left <= right && right < s.size()){
             if(need.find(s[right]) != need.end()){
                 count -= 1;
+                need[s[right]] -= 1;  
             }
-            need[s[right]] -= 1;  // 不论在不在都-1，这样不是t里面的字符会成为负数，后面可以用
+            right+=1;
             if(0 == count) {
-                while(left <= right && need[s[left]] < 0){
-                    need[s[left]] += 1;
+                while(left < right && 0 == count) {
+                    if(need.find(s[left]) != need.end()){
+                        count += 1;
+                        
+                    }
+                    need[s[left]] -= 1;
                     left += 1;
                 }
-                if(right - left + 1 < length) {
-                    length = right - left + 1;
+                if(right - left < length && count == 0) {
+                    cout << "find substring" << length << endl;
+                    length = right - left;
                     begin = left;
                 }
+                // 再走一个left，新旅途
                 need[s[left]] += 1;
                 left += 1;
                 count += 1;
             }
-            right += 1;
         }
-
-        return length == s.size() + 1 ? "" : s.substr(begin, length);
+        cout << "length: " << length << endl;
+        cout << "begin: " << begin << endl;
+        return (length == s.size() + 1) ? "" : s.substr(begin, length);
     }
 };
 
